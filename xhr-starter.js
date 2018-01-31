@@ -1,7 +1,7 @@
 // XHT and XMLHttpRequest = same
 // The XMLHttpRequest object can be used to request data from a web server.
 
-// The XMLHttpRequest object is a developers dream, because you can:
+// The XMLHttpRequest object:
 // Update a web page without reloading the page
 // Request data from a server - after the page has loaded
 // Receive data from a server  - after the page has loaded
@@ -37,7 +37,12 @@ dataRequest.open("GET", "JEOPARDY_QUESTIONS1.json");
 console.log("go get the data");
 
 // send() Sends the request. 
-//If the request is asynchronous (which is the default), 
+//If the request is asynchronous (which is the default),
+
+//asynchronous operation means that a process operates independently of other processes, 
+//whereas synchronous operation means that the process runs only as a result of some other 
+//process being completed or handing off operation.
+
 //this method returns as soon as the request is sent. 
 //Useful with progress
 dataRequest.send(); //adds it to the event loop. 
